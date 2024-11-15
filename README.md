@@ -1,4 +1,4 @@
-# Jenkins-ci-cd-pipeline-project
+# Jenkins ci/cd pipeline-project
 Jenkins ci/cd pipeline project using argocd gitops tool for deploy the application
 this project expalin a CI/CD pipeline with a focus on Argo CD, which is a key tool used at the end to deploy the app.
 
