@@ -22,17 +22,22 @@ A tool called an Image Updater detects that a new image has been uploaded. It th
 # Argo CD’s Role in Deployment:
 -Here’s where Argo CD comes in! Argo CD is a tool that watches the Manifests Repo for any changes. When it sees the new version in the repo, it automatically 
  deploys the updated version of the app to the Kubernetes environment.
+ 
 -Argo CD makes sure that what’s running in Kubernetes always matches what’s in Git. This means the team doesn’t have to do anything manually to update the app in 
  the live environment — Argo CD takes care of it.
+ 
 -By continuously checking the repo, Argo CD helps keep the app in sync with the latest version, making it easy to track and control what’s live.
  
 # Notifications:
  -Throughout this process, the pipeline sends notifications (e.g., on Slack or via email) to keep everyone informed about what’s happening, especially if there are 
   any issues.
- -Why Argo CD is Important:
-  Argo CD simplifies deployment because it automatically pushes the latest version to Kubernetes whenever there’s a new update. This hands-off approach (called 
+  
+ # Why Argo CD is Important:
+  -Argo CD simplifies deployment because it automatically pushes the latest version to Kubernetes whenever there’s a new update. This hands-off approach (called 
   GitOps) means the team only needs to update Git, and Argo CD will handle the rest, ensuring that the live environment is always current.
+ 
  -This automation saves time, reduces the chance of human errors, and makes it easy to track changes.
+ 
  -In summary, this pipeline automates the steps from writing code to deploying the app live, with Argo CD playing a crucial role in making sure deployments happen 
   smoothly and without manual steps.
 
